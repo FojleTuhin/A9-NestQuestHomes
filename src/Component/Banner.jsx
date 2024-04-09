@@ -1,27 +1,64 @@
 
 const Banner = () => {
     return (
-        <div>
-            <div className="carousel w-full">
-                <div id="item1" className="carousel-item w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" className="w-full" />
+        <div className="bg-[#F5F5F5]">
+
+
+            <div className="grid grid-cols-2 pl-[100px]">
+                <div>
+                    <p className="font-bold text-6xl mt-36">Let's hunt for your dream residence</p>
+                    <p className="mt-6">Explore our range of beautiful properties with the addition of separate accommodation suitable for you.</p>
                 </div>
-                <div id="item2" className="carousel-item w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" className="w-full" />
-                </div>
-                <div id="item3" className="carousel-item w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" className="w-full" />
-                </div>
-                <div id="item4" className="carousel-item w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" className="w-full" />
+                <div>
+                    <img src="/public/bernard-hermant-KqOLr8OiQLU-unsplash 1.png" alt="" />
                 </div>
             </div>
-            <div className="flex justify-center w-full py-2 gap-2">
-                <a href="#item1" className="btn btn-xs">1</a>
-                <a href="#item2" className="btn btn-xs">2</a>
-                <a href="#item3" className="btn btn-xs">3</a>
-                <a href="#item4" className="btn btn-xs">4</a>
+
+            <div className="px-[100px] pt-16 mb-16">
+                <div className="carousel w-full max-h-[400px]">
+                    <div id="item1" className="carousel-item w-full">
+                        <img src="/public/11.webp" className="w-full h-100vh" />
+                    </div>
+                    <div id="item2" className="carousel-item w-full">
+                        <img src="/public/12.jpeg" className="w-full" />
+                    </div>
+                    <div id="item3" className="carousel-item w-full">
+                        <img src="/public/13.jpg" className="w-full" />
+                    </div>
+                    <div id="item4" className="carousel-item w-full">
+                        <img src="/public/14.jpg" className="w-full" />
+                    </div>
+                </div>
+                <div className="flex justify-center w-full py-2 gap-2">
+                    <a href="#item1" className="btn btn-xs">1</a>
+                    <a href="#item2" className="btn btn-xs">2</a>
+                    <a href="#item3" className="btn btn-xs">3</a>
+                    <a href="#item4" className="btn btn-xs">4</a>
+                </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
     );
 };
