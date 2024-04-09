@@ -9,6 +9,7 @@ import {
 import Root from './Pages/Root';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
+import Register from './Pages/Register';
 
 const router = createBrowserRouter([
   {
@@ -20,12 +21,16 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path:'login',
-      element:<Login></Login>
+        path: 'login',
+        element: <Login></Login>
+      },
+      {
+        path: 'register',
+        element: <Register></Register>
       }
     ]
   }
-  
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
