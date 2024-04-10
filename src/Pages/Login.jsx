@@ -5,7 +5,7 @@ const Login = () => {
 
     const logInStyle = {
         backgroundImage:
-            "url('/public/cool-background.png')",
+            "url('/public/layered-waves-haikei.png')",
         height: "110vh",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",

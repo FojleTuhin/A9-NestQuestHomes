@@ -11,6 +11,7 @@ import Home from './Pages/Home';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 import Error from './Pages/Error';
+import ViewDetails from './Pages/ViewDetails';
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
       },
       {
         path: 'login',
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: 'register',
         element: <Register></Register>
+      },
+      {
+        path:'/viewDetails',
+        element:<ViewDetails></ViewDetails>
       }
     ]
   }

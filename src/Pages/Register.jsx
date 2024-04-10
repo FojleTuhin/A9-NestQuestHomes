@@ -5,7 +5,7 @@ const Register = () => {
 
     const logInStyle = {
         backgroundImage:
-            "url('/public/cool-background.png')",
+            "url('/public/layered-waves-haikei.png')",
         height: "130vh",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
