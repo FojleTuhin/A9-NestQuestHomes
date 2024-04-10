@@ -2,7 +2,7 @@
 const ViewDetails = () => {
     return (
         <div>
-            I am from ViewDetails
+            <p>Modern Haven Villa this stunning 5-bedroom, 4-bathroom </p>
         </div>
     );
 };
