@@ -12,17 +12,19 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import Error from './Pages/Error';
 import ViewDetails from './Pages/ViewDetails';
+import FirebaseProvider from './Firebase/FirebaseProvider';
+import PrivateRoute from './Pages/PrivateRoute';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    errorElement:<Error></Error>,
+    errorElement: <Error></Error>,
     element: <Root></Root>,
     children: [
       {
         path: '/',
         element: <Home></Home>,
-        
+
       },
       {
         path: 'login',
@@ -33,13 +35,13 @@ const router = createBrowserRouter([
         element: <Register></Register>
       },
       {
-        path:'/viewDetails',
-        element:<ViewDetails></ViewDetails>
+        path: '/viewDetails',
+        element: <ViewDetails></ViewDetails>
       },
       {
-        path:'/details/:id',
-        loader:()=>fetch('../FakeData.json'),
-        element:<ViewDetails></ViewDetails>
+        path: '/details/:id',
+        loader: () => fetch('../FakeData.json'),
+        element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>
       },
     ]
   }
@@ -48,6 +50,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <FirebaseProvider>
+      <RouterProvider router={router} />
+    </FirebaseProvider>
   </React.StrictMode>,
 )

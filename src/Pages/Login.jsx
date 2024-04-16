@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGithub, FaGoogle } from "react-icons/fa";
+import { useContext } from "react";
+import { AuthContext } from "../Firebase/FirebaseProvider";
 
 const Login = () => {
 
@@ -11,12 +13,23 @@ const Login = () => {
         backgroundRepeat: "no-repeat",
     }
 
+    const {signIn}=useContext(AuthContext);
+    const location =useLocation();
+    const navigate=useNavigate();
+
 
     const handleLogIn = (e) => {
         e.preventDefault()
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
+        signIn(email, password)
+        .then(result=>{
+
+            navigate(location?.state? location.state: '/')
+        })
+        .catch(error=>{
+            console.log(error);
+        })
     }
 
     return (

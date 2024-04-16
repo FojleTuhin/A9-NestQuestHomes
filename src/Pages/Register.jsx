@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaGithub, FaGoogle } from "react-icons/fa";
+import { useContext } from "react";
+import { AuthContext } from "../Firebase/FirebaseProvider";
 
 const Register = () => {
 
@@ -11,6 +13,8 @@ const Register = () => {
         backgroundRepeat: "no-repeat",
     }
 
+    const {createUser}= useContext(AuthContext);
+
 
     const handleLSignIn = (e) => {
         e.preventDefault()
@@ -18,7 +22,14 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         const photo = e.target.photo.value;
-        console.log(email, password, name, photo);
+
+        createUser(email, password)
+        .then(result =>{
+            console.log(result)
+        })
+        .catch(error=>{
+            console.log(error);
+        })
     }
 
     return (

@@ -1,9 +1,19 @@
 import { Link } from "react-router-dom";
 import { FaRegUser } from "react-icons/fa";
-import { CgProfile } from "react-icons/cg";
+import { useContext } from "react";
+import { AuthContext } from "../Firebase/FirebaseProvider";
+
 
 
 const Navbar = () => {
+
+    const{user, logOut}=useContext(AuthContext)
+
+    const handleSignOut=()=>{
+        logOut()
+        .then()
+        .catch()
+    }
 
     const links = <>
         <Link to='/'><li><a className="font-medium">Home</a></li></Link>
@@ -42,7 +52,15 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end max-sm:hidden">
                     <img className="w-12 h-12 border border-black mr-3 rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="" />
-                    <Link to='/login'> <a className=" border border-black flex gap-2 justify-center items-center px-6 py-3 font-medium rounded-3xl"><FaRegUser /> Login</a></Link>
+
+                        {
+                            user ?
+                            <Link> <a onClick={handleSignOut} className=" border border-black flex gap-2 justify-center items-center px-6 py-3 font-medium rounded-3xl"><FaRegUser /> Sign out</a></Link>
+                            :
+                            <Link to='/login'> <a className=" border border-black flex gap-2 justify-center items-center px-6 py-3 font-medium rounded-3xl"><FaRegUser /> Login</a></Link>
+                        }
+
+                    
                 </div>
 
 
