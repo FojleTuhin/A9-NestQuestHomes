@@ -17,9 +17,9 @@ const Navbar = () => {
 
     const links = <>
         <Link to='/'><li><a className="font-medium">Home</a></li></Link>
-        <li><a className="font-medium">Properties</a></li>
-        <li><a className="font-medium">Agents</a></li>
-        <li><a className="font-medium">Update profile</a></li>
+        <Link to='/updateProfile'><li><a className="font-medium">Update profile</a></li></Link>
+        
+        
 
 
     </>
@@ -48,13 +48,23 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1">
                         {links}
                     </ul>
+                    
 
                 </div>
                 <div className="navbar-end max-sm:hidden">
-                    <img className="w-12 h-12 border border-black mr-3 rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="" />
+                    {
+                        user?
+                        <img src={user.photoURL} alt="" />
+
+                        :
+                        <img className="w-12 h-12 border border-black mr-3 rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="" />
+
+
+                    }
 
                         {
                             user ?
+                            
                             <Link> <a onClick={handleSignOut} className=" border border-black flex gap-2 justify-center items-center px-6 py-3 font-medium rounded-3xl"><FaRegUser /> Sign out</a></Link>
                             :
                             <Link to='/login'> <a className=" border border-black flex gap-2 justify-center items-center px-6 py-3 font-medium rounded-3xl"><FaRegUser /> Login</a></Link>

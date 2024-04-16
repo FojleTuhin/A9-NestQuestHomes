@@ -14,6 +14,7 @@ import Error from './Pages/Error';
 import ViewDetails from './Pages/ViewDetails';
 import FirebaseProvider from './Firebase/FirebaseProvider';
 import PrivateRoute from './Pages/PrivateRoute';
+import UpdateProfile from './Pages/UpdateProfile';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,11 @@ const router = createBrowserRouter([
         loader: () => fetch('../FakeData.json'),
         element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>
       },
+      {
+        path:'/updateProfile',
+        element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+      }
+      
     ]
   }
 
