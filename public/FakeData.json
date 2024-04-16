@@ -1,237 +1,254 @@
 [
-    {
-      "images": [
-        "/public/1.png",
-        "/public/2.png",
-        "/public/3.png"
-      ],
-      "estate_title": "Cozy Single-Family Home",
-      "id": "001",
-      "segment_name": "Single-family home",
-      "description": "Beautiful single-family home nestled in a quiet neighborhood. Features 3 bedrooms, 2 bathrooms, and a spacious backyard.",
-      "price": "$300,000",
-      "status": "sale",
-      "area": "1800 sq ft",
-      "location": "Suburbia Estates, Anytown",
-      "facilities": ["Living room", "Backyard", "Garage"],
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "kitchens": 1,
-      "date_listed": "2024-04-10",
-      "year_built": 2005,
-      "school_district": "Anytown School District",
-      "neighborhood_features": ["Parks", "Shopping centers", "Schools"],
-      "contact_agent": {
-        "name": "John Doe",
-        "phone": "+1 (123) 456-7890",
-        "email": "john@example.com"
-      }
-    },
-    {
-      "images": [
-        "https://example.com/apartment1_1.jpg",
-        "https://example.com/apartment1_2.jpg",
-        "https://example.com/apartment1_3.jpg"
-      ],
-      "estate_title": "Luxury Downtown Apartment",
-      "id": "002",
-      "segment_name": "Apartment",
-      "description": "Modern apartment with stunning city views. Features 2 bedrooms, 2 bathrooms, and access to on-site fitness center and pool.",
-      "price": "$2,500/month",
-      "status": "rent",
-      "area": "1200 sq ft",
-      "location": "Downtown Tower, Metropolis",
-      "facilities": ["Swimming pool", "Fitness center", "Balcony"],
-      "date_listed": "2024-04-09",
-      "building_age": 2,
-      "floor_plan": "Open concept",
-      "utilities_included": ["Water", "Trash"],
-      "contact_landlord": {
-        "name": "Jane Smith",
-        "phone": "+1 (234) 567-8901",
-        "email": "jane@example.com"
-      }
-    },
-    {
-      "images": [
-        "https://example.com/townhouse1_1.jpg",
-        "https://example.com/townhouse1_2.jpg",
-        "https://example.com/townhouse1_3.jpg"
-      ],
-      "estate_title": "Charming Townhouse with Garden",
-      "id": "003",
-      "segment_name": "Townhouse",
-      "description": "Lovely townhouse with a private garden. 3 bedrooms, 2.5 bathrooms, and a cozy fireplace in the living room.",
-      "price": "$400,000",
-      "status": "sale",
-      "area": "2200 sq ft",
-      "location": "Greenville Heights, Smalltown",
-      "facilities": ["Garden", "Fireplace", "Garage"],
-      "date_listed": "2024-04-08",
-      "hoa_fee": "$200/month",
-      "year_renovated": 2018,
-      "pet_policy": "Pets allowed with restrictions",
-      "contact_realtor": {
-        "name": "Alice Johnson",
-        "phone": "+1 (345) 678-9012",
-        "email": "alice@example.com"
-      }
-    },
-    {
-      "images": [
-        "https://example.com/house2_1.jpg",
-        "https://example.com/house2_2.jpg",
-        "https://example.com/house2_3.jpg"
-      ],
-      "estate_title": "Spacious Family Home with Pool",
-      "id": "004",
-      "segment_name": "Single-family home",
-      "description": "Family-friendly home with 4 bedrooms, 3.5 bathrooms, and a large backyard with a pool.",
-      "price": "$500,000",
-      "status": "sale",
-      "area": "2500 sq ft",
-      "location": "Sunny Valley, Pleasantville",
-      "facilities": ["Swimming pool", "Backyard", "Garage"],
-      "bedrooms": 4,
-      "bathrooms": 3.5,
-      "kitchens": 1,
-      "date_listed": "2024-04-07",
-      "year_built": 2010,
-      "school_district": "Pleasantville Unified School District",
-      "neighborhood_features": ["Parks", "Playgrounds", "Schools"],
-      "contact_agent": {
-        "name": "Emily Brown",
-        "phone": "+1 (456) 789-0123",
-        "email": "emily@example.com"
-      }
-    },
-    {
-      "images": [
-        "https://example.com/apartment2_1.jpg",
-        "https://example.com/apartment2_2.jpg",
-        "https://example.com/apartment2_3.jpg"
-      ],
-      "estate_title": "Modern City Apartment",
-      "id": "005",
-      "segment_name": "Apartment",
-      "description": "Contemporary apartment in the heart of the city. 1 bedroom, 1 bathroom, and a balcony with city views.",
-      "price": "$1,800/month",
-      "status": "rent",
-      "area": "800 sq ft",
-      "location": "City Center Apartments, Metro City",
-      "facilities": ["Balcony", "Fitness center", "Concierge service"],
-      "date_listed": "2024-04-06",
-      "building_age": 5,
-      "floor_plan": "Open layout",
-      "utilities_included": ["Internet"],
-      "contact_landlord": {
-        "name": "Michael Johnson",
-        "phone": "+1 (567) 890-1234",
-        "email": "michael@example.com"
-      }
-    },
-    {
-      "images": [
-        "https://example.com/townhouse2_1.jpg",
-        "https://example.com/townhouse2_2.jpg",
-        "https://example.com/townhouse2_3.jpg"
-      ],
-      "estate_title": "Modern Townhouse with Rooftop Terrace",
-      "id": "006",
-      "segment_name": "Townhouse",
-      "description": "Stylish townhouse with 3 bedrooms, 2.5 bathrooms, and a rooftop terrace perfect for entertaining.",
-      "price": "$600,000",
-      "status": "sale",
-      "area": "2000 sq ft",
-      "location": "Uptown Living, Metropolis",
-      "facilities": ["Rooftop terrace", "Garage", "Modern kitchen"],
-      "date_listed": "2024-04-05",
-      "hoa_fee": "$250/month",
-      "year_renovated": 2019,
-      "pet_policy": "Pets allowed",
-      "contact_realtor": {
-        "name": "Sarah Wilson",
-        "phone": "+1 (678) 901-2345",
-        "email": "sarah@example.com"
-      }
-    },
-    {
-      "images": [
-        "https://example.com/seniorliving1_1.jpg",
-        "https://example.com/seniorliving1_2.jpg",
-        "https://example.com/seniorliving1_3.jpg"
-      ],
-      "estate_title": "Senior Living Community",
-      "id": "007",
-      "segment_name": "Senior living community",
-      "description": "Upscale retirement community offering comfortable living for seniors. Amenities include dining, wellness center, and social activities.",
-      "price": "$3,500/month",
-      "status": "rent",
-      "area": "1500 sq ft",
-      "location": "Serenity Gardens, Retirementville",
-      "facilities": ["Communal dining", "Wellness center", "Activity rooms"],
-      "date_listed": "2024-04-04",
-      "staff_ratio": "1:4",
-      "healthcare_services": ["On-site nurse", "Medication management"],
-      "meal_plans": ["Flexible dining options"],
-      "contact_community_manager": {
-        "name": "Emma Thompson",
-        "phone": "+1 (789) 012-3456",
-        "email": "emma@example.com"
-      }
-    },
-    {
-      "images": [
-        "https://example.com/house3_1.jpg",
-        "https://example.com/house3_2.jpg",
-        "https://example.com/house3_3.jpg"
-      ],
-      "estate_title": "Family Home with Mountain Views",
-      "id": "008",
-      "segment_name": "Single-family home",
-      "description": "Spacious family home with 4 bedrooms, 3 bathrooms, and stunning views of the mountains.",
-      "price": "$700,000",
-      "status": "sale",
-      "area": "2800 sq ft",
-      "location": "Mountain Vista, Scenic Valley",
-      "facilities": ["Backyard", "Garage", "Mountain views"],
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "kitchens": 1,
-      "date_listed": "2024-04-03",
-      "year_built": 2012,
-      "school_district": "Scenic Valley School District",
-      "neighborhood_features": ["Nature trails", "Parks", "Playgrounds"],
-      "contact_agent": {
-        "name": "Andrew Clark",
-        "phone": "+1 (890) 123-4567",
-        "email": "andrew@example.com"
-      }
-    },
-    {
-      "images": [
-        "https://example.com/apartment3_1.jpg",
-        "https://example.com/apartment3_2.jpg",
-        "https://example.com/apartment3_3.jpg"
-      ],
-      "estate_title": "Modern Loft Apartment",
-      "id": "009",
-      "segment_name": "Apartment",
-      "description": "Chic loft-style apartment with 1 bedroom, 1.5 bathrooms, and industrial-inspired design.",
-      "price": "$2,000/month",
-      "status": "rent",
-      "area": "1000 sq ft",
-      "location": "Artisan Lofts, Creative District",
-      "facilities": ["High ceilings", "Exposed brick", "Modern kitchen"],
-      "date_listed": "2024-04-02",
-      "building_age": 3,
-      "floor_plan": "Open loft layout",
-      "utilities_included": ["Internet", "Gas"],
-      "contact_landlord": {
-        "name": "Sophie Miller",
-        "phone": "+1 (901) 234-5678",
-        "email": "sophie@example.com"
-      }
+  {
+    "images": [
+      "/public/1.png",
+      "/public/2.png",
+      "/public/3.png"
+    ],
+    "estate_title": "Cozy Single-Family Home",
+    "id": "001",
+    "segment_name": "Single-family home",
+    "description": "Beautiful single-family home nestled in a quiet neighborhood. Features 3 bedrooms, 2 bathrooms, and a spacious backyard.",
+    "price": "$300/month",
+    "status": "rent",
+    "area": "1800 sq ft",
+    "location": "Suburbia Estates, Anytown",
+    "facilities": ["Living room", "Backyard", "Garage"],
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "date_listed": "2024-04-10",
+    "year_built": 2005,
+    "school_district": "Anytown School District",
+    "neighborhood_features": ["Parks", "Shopping centers", "Schools"],
+    "contact_agent": {
+      "name": "John Doe",
+      "phone": "+1 (123) 456-7890",
+      "email": "john@example.com"
     }
-  ]
-  
+  },
+  {
+    "images": [
+      "/public/4.png",
+      "/public/5.png",
+      "/public/6.png"
+    ],
+    "estate_title": "Modern Townhouse",
+    "id": "002",
+    "segment_name": "Townhouse",
+    "description": "Stylish and modern townhouse located in a vibrant neighborhood. Features 4 bedrooms, 3 bathrooms, and a rooftop terrace.",
+    "price": "$450,000",
+    "status": "sale",
+    "area": "2200 sq ft",
+    "location": "Downtown, Metropolis",
+    "facilities": ["Rooftop terrace", "Garage", "Modern kitchen"],
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "date_listed": "2024-04-11",
+    "year_built": 2010,
+    "school_district": "Metropolis School District",
+    "neighborhood_features": ["Restaurants", "Entertainment venues", "Public transportation"],
+    "contact_agent": {
+      "name": "Jane Smith",
+      "phone": "+1 (234) 567-8901",
+      "email": "jane@example.com"
+    }
+  },
+  {
+    "images": [
+      "/public/7.png",
+      "/public/8.png",
+      "/public/9.png"
+    ],
+    "estate_title": "Spacious Condo with Ocean View",
+    "id": "003",
+    "segment_name": "Condo",
+    "description": "Luxurious condo with breathtaking ocean views. Features 2 bedrooms, 2 bathrooms, and a balcony overlooking the sea.",
+    "price": "$600,000",
+    "status": "sale",
+    "area": "1500 sq ft",
+    "location": "Seaside Drive, Coastal City",
+    "facilities": ["Balcony", "Pool", "Fitness center"],
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "date_listed": "2024-04-12",
+    "year_built": 2015,
+    "school_district": "Coastal City School District",
+    "neighborhood_features": ["Beach", "Marina", "Cafes"],
+    "contact_agent": {
+      "name": "Michael Johnson",
+      "phone": "+1 (345) 678-9012",
+      "email": "michael@example.com"
+    }
+  },
+  {
+    "images": [
+      "/public/10.png",
+      "/public/11.png",
+      "/public/12.png"
+    ],
+    "estate_title": "Rustic Cabin Retreat",
+    "id": "004",
+    "segment_name": "Cabin",
+    "description": "Charming rustic cabin nestled in the woods. Perfect for nature lovers. Features 2 bedrooms, 1 bathroom, and a cozy fireplace.",
+    "price": "$250/month",
+    "status": "rent",
+    "area": "1200 sq ft",
+    "location": "Woodland Retreat, Mountains",
+    "facilities": ["Fireplace", "Deck", "Nature trails"],
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "date_listed": "2024-04-13",
+    "year_built": 1990,
+    "school_district": "Mountain School District",
+    "neighborhood_features": ["Hiking trails", "Scenic views", "Wildlife"],
+    "contact_agent": {
+      "name": "Emily Brown",
+      "phone": "+1 (456) 789-0123",
+      "email": "emily@example.com"
+    }
+  },
+  {
+    "images": [
+      "/public/13.png",
+      "/public/14.png",
+      "/public/15.png"
+    ],
+    "estate_title": "Luxury Penthouse Suite",
+    "id": "005",
+    "segment_name": "Penthouse",
+    "description": "Exquisite penthouse with panoramic city views. Features 5 bedrooms, 4 bathrooms, and a private rooftop garden.",
+    "price": "$2,500/month",
+    "status": "rent",
+    "area": "5000 sq ft",
+    "location": "Skyline Avenue, Metropolis",
+    "facilities": ["Rooftop garden", "Private elevator", "Home theater"],
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "date_listed": "2024-04-14",
+    "year_built": 2018,
+    "school_district": "Metropolis School District",
+    "neighborhood_features": ["Luxury boutiques", "Fine dining", "Cultural attractions"],
+    "contact_agent": {
+      "name": "David Wilson",
+      "phone": "+1 (567) 890-1234",
+      "email": "david@example.com"
+    }
+  },
+  {
+    "images": [
+      "/public/16.png",
+      "/public/17.png",
+      "/public/18.png"
+    ],
+    "estate_title": "Historic Mansion",
+    "id": "006",
+    "segment_name": "Mansion",
+    "description": "Magnificent historic mansion with elegant architecture and sprawling gardens. Features 8 bedrooms, 6 bathrooms, and a grand ballroom.",
+    "price": "$5,000,000",
+    "status": "sale",
+    "area": "10000 sq ft",
+    "location": "Heritage Lane, Countryside",
+    "facilities": ["Grand ballroom", "Gardens", "Library"],
+    "bedrooms": 8,
+    "bathrooms": 6,
+    "kitchens": 2,
+    "date_listed": "2024-04-15",
+    "year_built": 1920,
+    "school_district": "Countryside School District",
+    "neighborhood_features": ["Historic landmarks", "Scenic countryside", "Equestrian facilities"],
+    "contact_agent": {
+      "name": "Sarah Miller",
+      "phone": "+1 (678) 901-2345",
+      "email": "sarah@example.com"
+    }
+  },
+  {
+    "images": [
+      "/public/19.png",
+      "/public/20.png",
+      "/public/21.png"
+    ],
+    "estate_title": "Sleek City Apartment",
+    "id": "007",
+    "segment_name": "Apartment",
+    "description": "Modern and stylish apartment in the heart of the city. Features 1 bedroom, 1 bathroom, and a balcony with city views.",
+    "price": "$400/month",
+    "status": "rent",
+    "area": "800 sq ft",
+    "location": "Downtown, Metropolis",
+    "facilities": ["Balcony", "Fitness center", "Security"],
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "date_listed": "2024-04-16",
+    "year_built": 2016,
+    "school_district": "Metropolis School District",
+    "neighborhood_features": ["Cafes", "Theaters", "Nightlife"],
+    "contact_agent": {
+      "name": "Christopher Taylor",
+      "phone": "+1 (789) 012-3456",
+      "email": "christopher@example.com"
+    }
+  },
+  {
+    "images": [
+      "/public/22.png",
+      "/public/23.png",
+      "/public/24.png"
+    ],
+    "estate_title": "Charming Bungalow",
+    "id": "008",
+    "segment_name": "Bungalow",
+    "description": "Quaint and cozy bungalow with a wrap-around porch. Features 2 bedrooms, 1 bathroom, and a sunroom.",
+    "price": "$200/month",
+    "status": "rent",
+    "area": "1000 sq ft",
+    "location": "Maple Street, Suburbia",
+    "facilities": ["Wrap-around porch", "Sunroom", "Garden"],
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "date_listed": "2024-04-17",
+    "year_built": 1945,
+    "school_district": "Suburbia School District",
+    "neighborhood_features": ["Community parks", "Quiet streets", "Local shops"],
+    "contact_agent": {
+      "name": "Jessica Davis",
+      "phone": "+1 (890) 123-4567",
+      "email": "jessica@example.com"
+    }
+  },
+  {
+    "images": [
+      "/public/25.png",
+      "/public/26.png",
+      "/public/27.png"
+    ],
+    "estate_title": "Lakefront Retreat",
+    "id": "009",
+    "segment_name": "Lakefront property",
+    "description": "Tranquil lakefront property with stunning views. Features 3 bedrooms, 2 bathrooms, and a private dock.",
+    "price": "$800,000",
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": "Lakeside Drive, Serenity Lake",
+    "facilities": ["Private dock", "Boathouse", "Deck"],
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "date_listed": "2024-04-18",
+    "year_built": 2000,
+    "school_district": "Serenity Lake School District",
+    "neighborhood_features": ["Fishing", "Boating", "Nature reserves"],
+    "contact_agent": {
+      "name": "William Anderson",
+      "phone": "+1 (901) 234-5678",
+      "email": "william@example.com"
+    }
+  }
+]

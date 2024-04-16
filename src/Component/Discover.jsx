@@ -2,7 +2,7 @@
 const Discover = () => {
     return (
         <div className="px-[100px] bg-[#FCFCFC]">
-            <p className="text-2xl font-medium mb-7">Discover All Types</p>
+            <p className="text-2xl font-medium mb-7 mt-16">Discover All Types</p>
             <div className="grid grid-cols-4 gap-7">
                 <div>
                     <img src="/public/Rectangle 9.png" alt="" />

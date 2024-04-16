@@ -2,7 +2,7 @@
 const Cities = () => {
     return (
         <div className="px-[100px] ">
-        <p className="text-2xl font-medium mb-7">Popular Cities</p>
+        <p className="text-2xl font-medium mb-7 mt-16">Popular Cities</p>
         <div className="grid grid-cols-4 gap-7">
             <div>
                 <img src="/public/Rectangle 13.png" alt="" />

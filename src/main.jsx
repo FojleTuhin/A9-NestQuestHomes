@@ -22,6 +22,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
+        
       },
       {
         path: 'login',
@@ -34,7 +35,12 @@ const router = createBrowserRouter([
       {
         path:'/viewDetails',
         element:<ViewDetails></ViewDetails>
-      }
+      },
+      {
+        path:'/details/:id',
+        loader:()=>fetch('../FakeData.json'),
+        element:<ViewDetails></ViewDetails>
+      },
     ]
   }
 
