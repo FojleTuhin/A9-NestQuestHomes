@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
+import { FaFacebook, FaGoogle } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Firebase/FirebaseProvider";
 import toast, { Toaster } from 'react-hot-toast';
@@ -15,12 +15,12 @@ const Register = () => {
         backgroundRepeat: "no-repeat",
     }
 
-    const { createUser, googleLogin, facebookLogin } = useContext(AuthContext);
-    const [error, setError] = useState("");
+    const { createUser, googleLogin, facebookLogin, updateUser } = useContext(AuthContext);
 
     const handleGoogleLogin = () => {
         googleLogin()
             .then(result => {
+                
                 toast.success('Successfully sign in')
                 console.log(result);
             })
@@ -66,6 +66,7 @@ const Register = () => {
 
         createUser(email, password)
             .then(result => {
+                updateUser(name, photo)
                 console.log(result)
             })
             .catch(error => {

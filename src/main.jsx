@@ -17,6 +17,7 @@ import PrivateRoute from './Pages/PrivateRoute';
 import UpdateProfile from './Pages/UpdateProfile';
 import { HelmetProvider } from 'react-helmet-async';
 import Agent from './Pages/Agent';
+import Update from './Component/Update';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path:'/agent',
         element:<Agent></Agent>
+      },
+      {
+        path:'/update',
+        element:<Update></Update>
       }
 
     ]
