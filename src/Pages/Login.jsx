@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { useContext } from "react";
 import { AuthContext } from "../Firebase/FirebaseProvider";
+import toast, { Toaster } from "react-hot-toast";
 
 const Login = () => {
 
@@ -13,9 +14,9 @@ const Login = () => {
         backgroundRepeat: "no-repeat",
     }
 
-    const {signIn}=useContext(AuthContext);
-    const location =useLocation();
-    const navigate=useNavigate();
+    const { signIn } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
 
 
     const handleLogIn = (e) => {
@@ -23,17 +24,18 @@ const Login = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         signIn(email, password)
-        .then(result=>{
-
-            navigate(location?.state? location.state: '/')
-        })
-        .catch(error=>{
-            console.log(error);
-        })
+        
+            .then(result => {
+                navigate(location?.state ? location.state : '/')
+            })
+            .catch(error => {
+                toast.error("Password or email don't match")
+            })
     }
 
     return (
         <div style={logInStyle}>
+            <div><Toaster /></div>
 
             <div className="hero min-h-screen ">
                 <div className="hero-content flex-col ">
@@ -63,14 +65,11 @@ const Login = () => {
 
 
                         </form>
-                        <div className="flex gap-8 justify-evenly mb-3 px-4">
-                            <button className="btn "><FaGoogle />Google </button>
-                            <button className="btn"><FaGithub />Github</button>
-                        </div>
+                        
                         <div className="mb-8 px-6">
                             <p>New to NestquestHome? <span className="font-bold text-blue-600"><Link to='/register'>Sign in</Link></span></p>
                         </div>
-                        
+
 
 
                     </div>

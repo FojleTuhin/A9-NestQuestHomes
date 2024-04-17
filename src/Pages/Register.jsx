@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-import { FaGithub, FaGoogle } from "react-icons/fa";
-import { useContext } from "react";
+import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
+import { useContext, useState } from "react";
 import { AuthContext } from "../Firebase/FirebaseProvider";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Register = () => {
 
@@ -13,7 +14,32 @@ const Register = () => {
         backgroundRepeat: "no-repeat",
     }
 
-    const {createUser}= useContext(AuthContext);
+    const {createUser, googleLogin, facebookLogin}= useContext(AuthContext);
+    const [error, setError]=useState("");
+
+    const handleGoogleLogin= ()=>{
+        googleLogin()
+        .then(result =>{
+            toast.success('Successfully sign in')
+            console.log(result);
+        })
+        .catch(error=>{
+            toast.error('Something wrong')
+        })
+    }
+
+
+
+    const handleFacebookLogin=()=>{
+        facebookLogin()
+        .then(result =>{
+            toast.success('Successfully sign in')
+            
+        })
+        .catch(error=>{
+            toast.error('Something wrong')
+        })
+    }
 
 
     const handleLSignIn = (e) => {
@@ -22,6 +48,20 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         const photo = e.target.photo.value;
+
+        if(password.length<6){
+            toast.error("Password must be 6 characters.");
+            return
+        }
+
+       if( !/^(?=.*[a-z])(?=.*[A-Z]).+$/.test(password)){
+        toast.error("Password must be an upper case and lower case.");
+       }
+
+       else(
+        toast.success('Successfully Sign in!')
+
+       )
 
         createUser(email, password)
         .then(result =>{
@@ -34,6 +74,7 @@ const Register = () => {
 
     return (
         <div style={logInStyle}>
+            <div><Toaster/></div>
 
             <div className="hero min-h-screen ">
                 <div className=" flex-col ">
@@ -76,8 +117,8 @@ const Register = () => {
 
                         </form>
                         <div className="flex gap-8 justify-evenly mb-3 px-4">
-                            <button className="btn "><FaGoogle />Google </button>
-                            <button className="btn"><FaGithub />Github</button>
+                            <button onClick={handleGoogleLogin} className="btn "><FaGoogle />Google </button>
+                            <button onClick={handleFacebookLogin} className="btn"><FaFacebook />Facebook</button>
                         </div>
                         <div className="mb-8 px-6 text-center">
                             <p>Already have an account? <span className="font-bold text-blue-600"><Link to='/login'>Login</Link></span></p>
