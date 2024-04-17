@@ -40,7 +40,8 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex items-center">
-                        <img src="/public/Group 1000004335.png" alt="" />
+                        <img src="https://i.ibb.co/7zDTKyp/Group-1000004335.png
+" alt="" />
                         <Link to='/'><a className="btn btn-ghost text-xl font-bold">NestQuestHomes</a></Link>
                     </div>
                 </div>

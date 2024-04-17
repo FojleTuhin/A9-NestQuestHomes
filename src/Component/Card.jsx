@@ -7,7 +7,7 @@ const Card = ({item}) => {
         <div>
             <div className="card w-[300px] bg-base-100 shadow-xl">
                 <figure className="px-6 pt-6">
-                    <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
+                    <img src={item.images[0]} className="rounded-xl" />
                 </figure>
                 <div className="card-body ">
                     <h2 className="card-title">{item.segment_name}</h2>

@@ -1,9 +1,9 @@
 [
   {
     "images": [
-      "/public/1.png",
-      "/public/2.png",
-      "/public/3.png"
+      "https://i.ibb.co/JqkqxjD/1.png",
+      "https://i.ibb.co/jMFr6J6/2.png",
+      "https://i.ibb.co/X4Pzfdh/3.png"
     ],
     "estate_title": "Cozy Single-Family Home",
     "id": "001",
@@ -29,9 +29,9 @@
   },
   {
     "images": [
-      "/public/4.png",
-      "/public/5.png",
-      "/public/6.png"
+      "https://www.bankrate.com/2019/10/11115713/GettyImages-595504906.jpg?auto=webp&optimize=high&crop=16:9",
+      "https://i.ibb.co/5GPTf6q/Main-image-1.png",
+      "https://i.ibb.co/wNp3Mcb/Main-image-2.png"
     ],
     "estate_title": "Modern Townhouse",
     "id": "002",
@@ -57,9 +57,9 @@
   },
   {
     "images": [
-      "/public/7.png",
-      "/public/8.png",
-      "/public/9.png"
+      "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/07/multi-family_home.jpeg.jpg",
+      "https://i.ibb.co/df27CXv/Main-image-3.png",
+      "https://i.ibb.co/B22WzPv/Main-image-4.png"
     ],
     "estate_title": "Spacious Condo with Ocean View",
     "id": "003",
@@ -85,9 +85,9 @@
   },
   {
     "images": [
-      "/public/10.png",
-      "/public/11.png",
-      "/public/12.png"
+      "https://medialibrarycfo.entrata.com/15027/MLv3/3/21/2022/2/4/1002/5e3da2026b3535.62140649739.jpg",
+      "https://i.ibb.co/5GPTf6q/Main-image-1.png",
+      "https://i.ibb.co/wNp3Mcb/Main-image-2.png"
     ],
     "estate_title": "Rustic Cabin Retreat",
     "id": "004",

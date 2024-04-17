@@ -31,14 +31,14 @@ const ViewDetails = () => {
 
             <div className="grid grid-cols-8 gap-8 h-[380px] mb-12">
                 <div className="col-span-5">
-                    <img className="h-auto bg-cover" src="/public/1.png" alt="" />
+                    <img className="h-auto bg-cover" src={home.images[0]} alt="" />
                 </div>
                 <div className="col-span-3 flex flex-col gap-8">
                     <div>
-                        <img className="h-[174px] w-full" src="/public/2.png" alt="" />
+                        <img className="h-[174px] w-full" src={home.images[1]} alt="" />
                     </div>
                     <div>
-                        <img className="h-[174px] w-full" src="/public/2.png" alt="" />
+                        <img className="h-[174px] w-full" src={home.images[2]} alt="" />
                     </div>
                 </div>
 
