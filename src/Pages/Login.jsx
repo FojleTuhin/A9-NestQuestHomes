@@ -1,9 +1,9 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { FaGithub, FaGoogle } from "react-icons/fa";
 import { useContext } from "react";
 import { AuthContext } from "../Firebase/FirebaseProvider";
 import toast, { Toaster } from "react-hot-toast";
 import { Helmet } from "react-helmet-async";
+import 'animate.css';
 
 const Login = () => {
 
@@ -44,7 +44,7 @@ const Login = () => {
             <div className="hero min-h-screen ">
                 <div className="hero-content flex-col ">
                     <div className="text-center ">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
+                        <h1 className="text-5xl font-bold animate__animated animate__backInDown">Login now!</h1>
                     </div>
                     <div className="card shrink-0  max-w-sm shadow-2xl bg-[#c8d7d7]">
                         <form onSubmit={handleLogIn} className="card-body ">

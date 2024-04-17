@@ -8,6 +8,7 @@ import { AuthContext } from "../Firebase/FirebaseProvider";
 const Navbar = () => {
 
     const{user, logOut}=useContext(AuthContext)
+    console.log();
 
     const handleSignOut=()=>{
         logOut()
@@ -41,8 +42,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex items-center">
-                        <img src="https://i.ibb.co/7zDTKyp/Group-1000004335.png
-" alt="" />
+                        <img src="https://i.ibb.co/7zDTKyp/Group-1000004335.png" alt="" />
                         <Link to='/'><a className="btn btn-ghost text-xl font-bold">NestQuestHomes</a></Link>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
                   
                   
                   {
-                    user && <img className="w-12 h-12 border border-black mr-3 rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="" />
+                    user && <img className="w-12 h-12 border border-black mr-3 rounded-full" src={user.photoURL} />
                   }
 
                         {

@@ -1,3 +1,4 @@
+import 'animate.css';
 
 const Banner = () => {
     return (
@@ -6,7 +7,7 @@ const Banner = () => {
 
             <div className="grid grid-cols-2 pl-[100px]">
                 <div>
-                    <p className="font-bold text-6xl mt-36">Let's hunt for your dream residence</p>
+                    <p className="font-bold text-6xl mt-36 animate__animated animate__heartBeat">Let's hunt for your dream residence</p>
                     <p className="mt-6">Explore our range of beautiful properties with the addition of separate accommodation suitable for you.</p>
                 </div>
                 <div>

@@ -84,7 +84,7 @@ const Register = () => {
             <div className="hero min-h-screen ">
                 <div className=" flex-col ">
                     <div className="text-center mt-5 mb-5">
-                        <h1 className="text-5xl font-bold">Register now!</h1>
+                        <h1 className="text-5xl font-bold animate__animated animate__backInDown">Register now!</h1>
                     </div>
                     <div className="card shrink-0 w-full shadow-2xl bg-[#c8d7d7]">
                         <form onSubmit={handleLSignIn} className="card-body">
