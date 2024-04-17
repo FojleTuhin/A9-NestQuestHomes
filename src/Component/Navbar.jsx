@@ -54,7 +54,9 @@ const Navbar = () => {
                 <div className="navbar-end max-sm:hidden">
                   
                   
-                  <img className="w-12 h-12 border border-black mr-3 rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="" />
+                  {
+                    user && <img className="w-12 h-12 border border-black mr-3 rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="" />
+                  }
 
                         {
                             user ?
