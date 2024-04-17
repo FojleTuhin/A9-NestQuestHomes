@@ -5,15 +5,21 @@ import { BiBath } from "react-icons/bi";
 import { GiKitchenKnives } from "react-icons/gi";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { useLoaderData, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const ViewDetails = () => {
 
     const homes = useLoaderData();
-     const {id}=useParams();
-     const home= homes.find(home=> home.id === id);
+    const { id } = useParams();
+    const home = homes.find(home => home.id === id);
 
     return (
         <div className="px-[100px]">
+
+            <Helmet>
+                <title>NestQuest | ViewDetails</title>
+            </Helmet>
+
             <div className="flex justify-between">
                 <p className="mt-8 text-2xl font-semibold">{home.estate_title} </p>
                 <p className="mt-8 text-2xl font-semibold">{id}</p>
@@ -86,11 +92,11 @@ const ViewDetails = () => {
                                         <li>{home.neighborhood_features[0]}</li>
                                         <li>{home.neighborhood_features[1]}</li>
                                         <li>{home.neighborhood_features[2]}</li>
-                                       
+
                                     </ul>
                                     <p className="mt-3"><span className="font-bold text-[#5E5E5E]">Location:</span> {home.location}</p>
 
-                                   
+
 
                                 </div>
 
@@ -120,7 +126,7 @@ const ViewDetails = () => {
                                 <li>{home.facilities[0]}</li>
                                 <li>{home.facilities[1]}</li>
                                 <li>{home.facilities[2]}</li>
-                                
+
 
                             </ul>
 

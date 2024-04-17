@@ -17,6 +17,7 @@ const Navbar = () => {
 
     const links = <>
         <Link to='/'><li><a className="font-medium">Home</a></li></Link>
+        <Link to='/agent'><li><a className="font-medium">Agent</a></li></Link>
         <Link to='/updateProfile'><li><a className="font-medium">Update profile</a></li></Link>
         
         

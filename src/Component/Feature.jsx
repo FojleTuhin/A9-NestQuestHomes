@@ -12,7 +12,7 @@ const Feature = () => {
 
     return (
         <div>
-             <div className="flex gap-6 justify-center flex-wrap">
+             <div data-aos="zoom-in" className="flex gap-6 justify-center flex-wrap">
                {
                 homes.map(item=> <Card key={item.id} item={item}></Card>)
                }

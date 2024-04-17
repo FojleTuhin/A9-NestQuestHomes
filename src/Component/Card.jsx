@@ -1,11 +1,14 @@
-import { BsCurrencyDollar } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const Card = ({item}) => {
     return (
         <div>
-            <div className="card w-[300px] bg-base-100 shadow-xl">
+            
+            <div data-aos="fade-up"  className="card w-[300px] bg-base-100 shadow-xl ">
                 <figure className="px-6 pt-6">
                     <img src={item.images[0]} className="rounded-xl" />
                 </figure>

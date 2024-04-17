@@ -3,42 +3,43 @@ import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Firebase/FirebaseProvider";
 import toast, { Toaster } from 'react-hot-toast';
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
 
     const logInStyle = {
         backgroundImage:
-            "url('/public/layered-waves-haikei.png')",
+            "url('https://i.ibb.co/mS4fXSD/layered-waves-haikei.png')",
         height: "130vh",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
     }
 
-    const {createUser, googleLogin, facebookLogin}= useContext(AuthContext);
-    const [error, setError]=useState("");
+    const { createUser, googleLogin, facebookLogin } = useContext(AuthContext);
+    const [error, setError] = useState("");
 
-    const handleGoogleLogin= ()=>{
+    const handleGoogleLogin = () => {
         googleLogin()
-        .then(result =>{
-            toast.success('Successfully sign in')
-            console.log(result);
-        })
-        .catch(error=>{
-            toast.error('Something wrong')
-        })
+            .then(result => {
+                toast.success('Successfully sign in')
+                console.log(result);
+            })
+            .catch(error => {
+                toast.error('Something wrong')
+            })
     }
 
 
 
-    const handleFacebookLogin=()=>{
+    const handleFacebookLogin = () => {
         facebookLogin()
-        .then(result =>{
-            toast.success('Successfully sign in')
-            
-        })
-        .catch(error=>{
-            toast.error('Something wrong')
-        })
+            .then(result => {
+                toast.success('Successfully sign in')
+
+            })
+            .catch(error => {
+                toast.error('Something wrong')
+            })
     }
 
 
@@ -49,32 +50,36 @@ const Register = () => {
         const password = e.target.password.value;
         const photo = e.target.photo.value;
 
-        if(password.length<6){
+        if (password.length < 6) {
             toast.error("Password must be 6 characters.");
             return
         }
 
-       if( !/^(?=.*[a-z])(?=.*[A-Z]).+$/.test(password)){
-        toast.error("Password must be an upper case and lower case.");
-       }
+        if (!/^(?=.*[a-z])(?=.*[A-Z]).+$/.test(password)) {
+            toast.error("Password must be an upper case and lower case.");
+        }
 
-       else(
-        toast.success('Successfully Sign in!')
+        else (
+            toast.success('Successfully Sign in!')
 
-       )
+        )
 
         createUser(email, password)
-        .then(result =>{
-            console.log(result)
-        })
-        .catch(error=>{
-            console.log(error);
-        })
+            .then(result => {
+                console.log(result)
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
 
     return (
         <div style={logInStyle}>
-            <div><Toaster/></div>
+
+            <Helmet>
+                <title>NestQuest | Register</title>
+            </Helmet>
+            <div><Toaster /></div>
 
             <div className="hero min-h-screen ">
                 <div className=" flex-col ">
@@ -107,7 +112,7 @@ const Register = () => {
                                 </label>
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" required />
                                 <label className="label">
-                                    
+
                                 </label>
                             </div>
                             <div className="form-control mt-6">

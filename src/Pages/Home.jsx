@@ -4,6 +4,7 @@ import Banner from "../Component/Banner";
 import Cities from "../Component/Cities";
 import Discover from "../Component/Discover";
 import Feature from "../Component/Feature";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
 
@@ -11,6 +12,11 @@ const Home = () => {
 
     return (
         <div>
+             <Helmet>
+                <title>NestQuest | Home</title>
+            </Helmet>
+    
+
             <Banner></Banner>
             <div className="bg-[#FCFCFC]">
                 <div className="px-[100px]">

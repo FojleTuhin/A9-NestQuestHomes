@@ -3,12 +3,13 @@ import { FaGithub, FaGoogle } from "react-icons/fa";
 import { useContext } from "react";
 import { AuthContext } from "../Firebase/FirebaseProvider";
 import toast, { Toaster } from "react-hot-toast";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
 
     const logInStyle = {
         backgroundImage:
-            "url('/public/layered-waves-haikei.png')",
+            "url('https://i.ibb.co/mS4fXSD/layered-waves-haikei.png')",
         height: "110vh",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
@@ -35,6 +36,9 @@ const Login = () => {
 
     return (
         <div style={logInStyle}>
+             <Helmet>
+                <title>NestQuest | Login</title>
+            </Helmet>
             <div><Toaster /></div>
 
             <div className="hero min-h-screen ">

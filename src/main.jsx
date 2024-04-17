@@ -15,6 +15,8 @@ import ViewDetails from './Pages/ViewDetails';
 import FirebaseProvider from './Firebase/FirebaseProvider';
 import PrivateRoute from './Pages/PrivateRoute';
 import UpdateProfile from './Pages/UpdateProfile';
+import { HelmetProvider } from 'react-helmet-async';
+import Agent from './Pages/Agent';
 
 const router = createBrowserRouter([
   {
@@ -45,10 +47,14 @@ const router = createBrowserRouter([
         element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>
       },
       {
-        path:'/updateProfile',
-        element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+        path: '/updateProfile',
+        element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+      },
+      {
+        path:'/agent',
+        element:<Agent></Agent>
       }
-      
+
     ]
   }
 
@@ -56,8 +62,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <FirebaseProvider>
-      <RouterProvider router={router} />
-    </FirebaseProvider>
+    <HelmetProvider>
+      <FirebaseProvider>
+        <RouterProvider router={router} />
+      </FirebaseProvider>
+    </HelmetProvider>
   </React.StrictMode>,
 )
