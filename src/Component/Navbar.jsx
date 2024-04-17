@@ -7,28 +7,28 @@ import { AuthContext } from "../Firebase/FirebaseProvider";
 
 const Navbar = () => {
 
-    const{user, logOut}=useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
     console.log();
 
-    const handleSignOut=()=>{
+    const handleSignOut = () => {
         logOut()
-        .then()
-        .catch()
+            .then()
+            .catch()
     }
 
     const links = <>
         <Link to='/'><li><a className="font-medium">Home</a></li></Link>
         <Link to='/agent'><li><a className="font-medium">Agent</a></li></Link>
-        <Link to='/updateProfile'><li><a className="font-medium">Update profile</a></li></Link>
-        
-        
+        <Link to='/updateProfile'><li><a className="font-medium">Profile</a></li></Link>
+
+
 
 
     </>
 
     return (
         <div className="px-[100px] bg-[#F5F5F5]">
-            <div className="navbar">
+            <div className="navbar pt-6">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,25 +50,28 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1">
                         {links}
                     </ul>
-                    
+
 
                 </div>
                 <div className="navbar-end max-sm:hidden">
-                  
-                  
-                  {
-                    user && <img className="w-12 h-12 border border-black mr-3 rounded-full" src={user.photoURL} />
-                  }
 
-                        {
-                            user ?
-                            
+
+
+                    {
+                        user && <div className="tooltip" data-tip={user.email}>
+                            <img className="w-12 h-12 border border-black mr-3 rounded-full" src={user.photoURL} />
+                        </div>
+                    }
+
+                    {
+                        user ?
+
                             <Link> <a onClick={handleSignOut} className=" border border-black flex gap-2 justify-center items-center px-6 py-3 font-medium rounded-3xl"><FaRegUser /> Sign out</a></Link>
                             :
                             <Link to='/login'> <a className=" border border-black flex gap-2 justify-center items-center px-6 py-3 font-medium rounded-3xl"><FaRegUser /> Login</a></Link>
-                        }
+                    }
 
-                    
+
                 </div>
 
 
