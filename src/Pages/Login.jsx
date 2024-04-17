@@ -4,6 +4,7 @@ import { AuthContext } from "../Firebase/FirebaseProvider";
 import toast, { Toaster } from "react-hot-toast";
 import { Helmet } from "react-helmet-async";
 import 'animate.css';
+import { FaFacebook, FaGoogle } from "react-icons/fa";
 
 const Login = () => {
 
@@ -15,9 +16,34 @@ const Login = () => {
         backgroundRepeat: "no-repeat",
     }
 
-    const { signIn } = useContext(AuthContext);
+    const { signIn, googleLogin, facebookLogin } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
+
+    const handleGoogleLogin = () => {
+        googleLogin()
+            .then(result => {
+                
+                toast.success('Successfully sign in')
+                console.log(result);
+            })
+            .catch(error => {
+                toast.error('Something wrong')
+            })
+    }
+
+
+
+    const handleFacebookLogin = () => {
+        facebookLogin()
+            .then(result => {
+                toast.success('Successfully sign in')
+
+            })
+            .catch(error => {
+                toast.error('Something wrong')
+            })
+    }
 
 
     const handleLogIn = (e) => {
@@ -69,6 +95,10 @@ const Login = () => {
 
 
                         </form>
+                        <div className="flex gap-8 justify-evenly mb-3 px-4">
+                            <button onClick={handleGoogleLogin} className="btn "><FaGoogle />Google </button>
+                            <button onClick={handleFacebookLogin} className="btn"><FaFacebook />Facebook</button>
+                        </div>
                         
                         <div className="mb-8 px-6">
                             <p>New to NestquestHome? <span className="font-bold text-blue-600"><Link to='/register'>Sign in</Link></span></p>

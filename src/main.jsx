@@ -53,7 +53,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/agent',
-        element:<Agent></Agent>
+        element:<PrivateRoute><Agent></Agent></PrivateRoute>
       },
       {
         path:'/update',
