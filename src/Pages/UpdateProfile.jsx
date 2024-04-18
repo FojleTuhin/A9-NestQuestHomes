@@ -7,7 +7,7 @@ const UpdateProfile = () => {
     const { user } = useContext(AuthContext)
 
     return (
-        <div className='px-[100px] mt-12 mb-16'>
+        <div className='px-4 md-8 lg:px-[100px] mt-12 mb-16'>
 
             <Helmet>
                 <title>NestQuest | Profile</title>
@@ -19,7 +19,7 @@ const UpdateProfile = () => {
                 <p className='font-bold text-xl'>Email: {user.email} </p>
             </div>
 
-            <div className='flex justify-end'>
+            <div className='flex md:justify-end justify-center mt-6'>
                 <Link to='/update'><button className='btn bg-[#4F95FF] font-bold text-white  '>Edit profile ?</button></Link>
             </div>
 

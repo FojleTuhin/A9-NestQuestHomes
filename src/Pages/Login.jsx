@@ -101,7 +101,7 @@ const Login = () => {
                         </div>
                         
                         <div className="mb-8 px-6">
-                            <p>New to NestquestHome? <span className="font-bold text-blue-600"><Link to='/register'>Sign in</Link></span></p>
+                            <p>New to NestquestHome? <span className="font-bold text-blue-600"><Link to='/register'>Sign up</Link></span></p>
                         </div>
 
 

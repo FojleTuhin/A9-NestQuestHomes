@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../Firebase/FirebaseProvider";
 import toast from "react-hot-toast";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 
 const Update = () => {
@@ -20,14 +21,14 @@ const Update = () => {
     }
 
     return (
-        <div className="px-[100px] mb-16">
+        <div className="px-4 md:px-8 lg:px-[100px] mb-16">
 
             <Helmet>
                 <title>NestQuest | UpdateProfile</title>
             </Helmet>
-            <div className="hero min-h-screen ">
+            <div className="hero  ">
                 <div className=" flex-col ">
-                    <div className="text-center mt-5 mb-5">
+                    <div className="text-center mb-5 mt-12">
                         <h1 className="text-5xl font-bold animate__animated animate__backInDown">Update now!</h1>
                     </div>
                     <div className="card shrink-0 w-full shadow-2xl bg-[#c8d7d7]">
@@ -57,7 +58,11 @@ const Update = () => {
 
 
                     </div>
+
                 </div>
+            </div>
+            <div className=" flex md:justify-end justify-center mt-6">
+                <Link to='/updateProfile'><button className="btn bg-[#8aabab] font-extrabold text-white">Go back</button></Link>
             </div>
         </div>
     );
