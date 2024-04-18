@@ -5,9 +5,9 @@ const Banner = () => {
         <div className="bg-[#F5F5F5]">
 
 
-            <div className="grid grid-cols-2 pl-[100px]">
-                <div>
-                    <p className="font-bold text-6xl mt-36 animate__animated animate__heartBeat">Let's hunt for your dream residence</p>
+            <div className="md:grid grid-cols-2 p-4 md:pl-8 lg:pl-[100px]">
+                <div className='max-sm:text-center'>
+                    <p className="font-bold text-2xl md:text-4xl lg:text-6xl pt-10 md:mt-20 lg:mt-36 animate__animated animate__heartBeat">Let's hunt for your dream residence</p>
                     <p className="mt-6">Explore our range of beautiful properties with the addition of separate accommodation suitable for you.</p>
                 </div>
                 <div>
@@ -15,7 +15,7 @@ const Banner = () => {
                 </div>
             </div>
 
-            <div className="px-[100px] pt-16 mb-16">
+            <div className=" px-6 md:px-8 lg:px-[100px] pt-16 mb-16">
                 <div className="carousel w-full max-h-[400px]">
                     <div id="item1" className="carousel-item w-full">
                         <img src="https://i.ibb.co/vx7MbW6/11.webp" className="w-full h-100vh" />

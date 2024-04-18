@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div className="bg-[#1F2744] px-[100px] py-16 grid grid-cols-3 gap-6 text-white">
+        <div className="bg-[#1F2744] px-4 md:px-8 lg:px-[100px] py-16 grid md:grid-cols-3 gap-6 justify-center text-white">
             <div>
                 <Link to='/'><a className="btn btn-ghost text-xl font-bold">NestQuestHomes</a></Link>
                 <p className="mt-9 text-[#9D9EA1]">Customer Supports:</p>
@@ -18,7 +18,7 @@ const Footer = () => {
                 <p>© 2021 . All rights reserved.</p>
             </div>
             <div>
-                <p className="font-semibold mt-2 mb-8 text-xl">Properties</p>
+                <p className="font-semibold mt-2 mb-8 text-xl text-center md:text-left">Properties</p>
                 <ul>
                     <li className="mb-2">About us</li>
                     <li className="mb-2">Our Mission</li>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div>
-                <p className="font-semibold mt-2 mb-8 text-xl">All pages</p>
+                <p className="font-semibold mt-2 mb-8 text-xl text-center md:text-left">All pages</p>
                 <ul>
                     <li className="mb-2">Cocker Spaniel</li>
                     <li className="mb-2">Cockapoo</li>

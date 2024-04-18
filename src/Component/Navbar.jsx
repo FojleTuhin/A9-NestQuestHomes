@@ -27,7 +27,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="px-[100px] bg-[#F5F5F5]">
+        <div className="px-4 md:px-8 lg:px-[100px] bg-[#F5F5F5]">
             <div className="navbar pt-6">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -36,7 +36,19 @@ const Navbar = () => {
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             {links}
-                            <Link to='/login'> <a className="border border-black flex gap-2 justify-center items-center px-6 py-3 font-medium rounded-3xl"><FaRegUser /> Login</a></Link>
+                            {
+                        user && <div className="tooltip" data-tip={user.email}>
+                            <img className="w-12 h-12 border border-black mr-3 rounded-full" src={user.photoURL} />
+                        </div>
+                    }
+
+                    {
+                        user ?
+
+                            <Link> <a onClick={handleSignOut} className=" border border-black flex gap-2 justify-center items-center px-6 py-3 font-medium rounded-3xl"><FaRegUser /> Sign out</a></Link>
+                            :
+                            <Link to='/login'> <a className=" border border-black flex gap-2 justify-center items-center px-6 py-3 font-medium rounded-3xl"><FaRegUser /> Login</a></Link>
+                    }
 
                         </ul>
                     </div>
