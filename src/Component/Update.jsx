@@ -29,7 +29,7 @@ const Update = () => {
             <div className="hero  ">
                 <div className=" flex-col ">
                     <div className="text-center mb-5 mt-12">
-                        <h1 className="text-5xl font-bold animate__animated animate__backInDown">Update now!</h1>
+                        <h1 className="text-4xl font-bold animate__animated animate__backInDown">Update now!</h1>
                     </div>
                     <div className="card shrink-0 max-w-sm shadow-2xl bg-[#c8d7d7]">
                         <form onSubmit={handleLSignIn} className="card-body">
