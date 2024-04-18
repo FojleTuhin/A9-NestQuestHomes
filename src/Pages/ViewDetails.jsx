@@ -14,7 +14,7 @@ const ViewDetails = () => {
     const home = homes.find(home => home.id === id);
 
     return (
-        <div className="px-[100px]">
+        <div className="px-4 md:px-8 lg:px-[100px]">
 
             <Helmet>
                 <title>NestQuest | ViewDetails</title>
@@ -25,32 +25,32 @@ const ViewDetails = () => {
                 <p className="mt-8 text-2xl font-semibold">{id}</p>
             </div>
             <p className="mt-8 text-xl font-medium">{home.segment_name}</p>
-            <div className="mt-5 flex justify-between mb-10">
+            <div className="mt-5 md:flex justify-between mb-10">
                 <div className="flex gap-3 items-center"><FaLocationDot />{home.location}</div>
-                <div className="flex gap-3 items-center"><TfiTimer />{home.date_listed}</div>
-                <div className="flex gap-12 items-center">
+                <div className="flex gap-3 items-center mt-2 md:mt-0"><TfiTimer />{home.date_listed}</div>
+                <div className="flex md:gap-12 gap-6 items-center mt-2 md:mt-0">
                     <button className="flex gap-3 items-center btn border-black"><AiOutlineHeart />Save</button>
                     <button className="flex gap-3 items-center btn border-black"><AiOutlineShareAlt />Share</button>
                 </div>
 
             </div>
 
-            <div className="grid grid-cols-8 gap-8 h-[380px] mb-12">
-                <div className="col-span-5">
+            <div className="md:grid md:grid-cols-8 md:gap-8 gap-4 md:h-[380px] mb-12">
+                <div className="md:col-span-5 w-full mb-8 md:mb-0">
                     <img className="h-auto bg-cover" src={home.images[0]} alt="" />
                 </div>
-                <div className="col-span-3 flex flex-col gap-8">
+                <div className="md:col-span-3 flex md:flex-col md:gap-8 gap-4">
                     <div>
-                        <img className="h-[174px] w-full" src={home.images[1]} alt="" />
+                        <img className="md:h-[174px] h-[85px] w-full" src={home.images[1]} alt="" />
                     </div>
                     <div>
-                        <img className="h-[174px] w-full" src={home.images[2]} alt="" />
+                        <img className="md:h-[174px] h-[85px] w-full" src={home.images[2]} alt="" />
                     </div>
                 </div>
 
 
             </div>
-            <div className="grid grid-cols-8 gap-8">
+            <div className="md:grid md:grid-cols-8 md:gap-8">
 
                 <div className="col-span-5">
                     <div className="flex justify-between border-2 border-gray-300 rounded-xl mb-10 px-[55px] py-[20px]">
@@ -76,7 +76,7 @@ const ViewDetails = () => {
                         <p className="font-medium text-2xl mb-8">More Details</p>
                         <div className="bg-[#F5F5F5] p-7 rounded-xl">
                             <p className="font-bold text-xl mb-3">Property Information</p>
-                            <div className="grid grid-cols-2 ">
+                            <div className="md:grid md:grid-cols-2 ">
                                 <div>
                                     <p className="mb-3"><span className="font-bold text-[#5e5e5e]">Bed:</span> {home.bedrooms}</p>
                                     <p className="mb-3"><span className="font-bold text-[#5E5E5E]">Bath:</span> {home.bathrooms}</p>
@@ -108,15 +108,15 @@ const ViewDetails = () => {
 
                 </div>
                 <div className="col-span-3">
-                    <div className="border-2 border-gray-300 rounded-xl p-8">
+                    <div className="border-2 border-gray-300 rounded-xl p-8 mb-10">
                         <div className="mb-5 flex justify-between">
                             <p className="font-bold">Price</p>
                             <p className="font-bold text-2xl text-[#4F95FF]">{home.status}</p>
                         </div>
                         <p className="text-2xl font-bold flex items-center "><BsCurrencyDollar className="text-[#BF9500] font-bold" />{home.price}</p>
-                        <div className="flex justify-between mt-7 mb-8">
+                        <div className="flex flex-col justify-between mt-7 mb-8">
                             <button className="btn border-[#4F95FF] text-[#4F95FF]">Book aTour</button>
-                            <button className="btn bg-[#4F95FF] text-white">Contact Agent</button>
+                            <button className="btn bg-[#4F95FF] text-white mt-2">Contact Agent</button>
                         </div>
                         <hr className="border-2 mb-6" />
                         <p className="font-medium text-xl text-center mb-4">Facilities</p>

@@ -13,25 +13,25 @@ const Discover = () => {
             >
                 <SwiperSlide><div>
                     <img src="https://i.ibb.co/XVzRbCw/Rectangle-9.png" alt="" />
-                    <p className="bg-[#FFFFFF80] lg:font-medium lg:text-xl relative bottom-28 md:bottom-48 lg:bottom-72 text-center">Banglow</p>
+                    <p className="bg-[#FFFFFF80] lg:font-medium lg:text-xl relative bottom-24 md:bottom-48 lg:bottom-72 text-center">Banglow</p>
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
                 <div>
                     <img src="https://i.ibb.co/pXTtKdQ/Rectangle-10.png" alt="" /> 
-                    <p className="bg-[#FFFFFF80] lg:font-medium lg:text-xl relative bottom-28 md:bottom-48 lg:bottom-72 text-center">Villa</p>
+                    <p className="bg-[#FFFFFF80] lg:font-medium lg:text-xl relative bottom-24 md:bottom-48 lg:bottom-72 text-center">Villa</p>
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
                 <div>
                     <img src="https://i.ibb.co/mFqNMm5/Rectangle-11.png" alt="" />
-                    <p className="bg-[#FFFFFF80] lg:font-medium lg:text-xl relative bottom-28 md:bottom-48 lg:bottom-72 text-center">Penthouse</p>
+                    <p className="bg-[#FFFFFF80] lg:font-medium lg:text-xl relative bottom-24 md:bottom-48 lg:bottom-72 text-center">Penthouse</p>
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
                 <div>
                     <img src="https://i.ibb.co/n1Dh5gK/Rectangle-12.png" alt="" />
-                    <p className="bg-[#FFFFFF80] lg:font-medium lg:text-xl relative bottom-28 md:bottom-48 lg:bottom-72 text-center">House</p>
+                    <p className="bg-[#FFFFFF80] lg:font-medium lg:text-xl relative bottom-24 md:bottom-48 lg:bottom-72 text-center">House</p>
                 </div>
                 </SwiperSlide>
                 ...
