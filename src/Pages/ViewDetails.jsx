@@ -41,10 +41,10 @@ const ViewDetails = () => {
                 </div>
                 <div className="md:col-span-3 flex md:flex-col md:gap-8 gap-4">
                     <div>
-                        <img className="md:h-[174px] h-[85px] w-full" src={home.images[1]} alt="" />
+                        <img className="md:h-[174px]  w-full" src={home.images[1]} alt="" />
                     </div>
                     <div>
-                        <img className="md:h-[174px] h-[85px] w-full" src={home.images[2]} alt="" />
+                        <img className="md:h-[174px]  w-full" src={home.images[2]} alt="" />
                     </div>
                 </div>
 
